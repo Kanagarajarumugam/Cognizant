@@ -1,0 +1,202 @@
+
+/* 1. External Stylesheet Setup  */
+
+/* 2. CSS Syntax & Comments */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* 3. Selectors Playground  */
+
+
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#welcomeBanner {
+  font-family: 'Arial', sans-serif;
+  background-color: #003366; 
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.eventCard {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+h3, p {
+  font-family: 'Georgia', serif;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* 4. Color & Background Styling */
+
+
+
+body {
+  background-color: #e0f0ff;
+  background-image: url('images/city-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section h2 {
+  background: linear-gradient(90deg, #004080, #00bfff);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+
+/* 5. Typography: Fonts and Text */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+.description {
+  font-style: italic;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+
+
+/* 6. Link and List Styling */
+
+
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  background-color: #004080;
+}
+
+nav ul li {
+  padding: 5px 10px;
+}
+
+
+nav ul li a:link {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: #99ccff;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+nav ul li a:active {
+  color: #ff9900;
+}
+
+/* 7. Table Styling */
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 10px;
+}
+
+th {
+  background-color: #007acc;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e6f2ff;
+}
+
+/* 8. Box Model & Layout Control */
+
+
+.eventCard {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #004080;
+  border-radius: 8px;
+}
+
+
+input:focus, select:focus, textarea:focus {
+  outline: 3px solid #3399ff;
+  background-color: #f0f8ff;
+}
+
+
+
+/* 9. Multiple Columns in Text */
+
+
+.news-article {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  padding: 15px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+
+/* 10. Responsive Web Design */
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+
+  .gallery-img {
+    width: 100px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+
+/* 11. Debug and Test with Dev Tools */
+
+

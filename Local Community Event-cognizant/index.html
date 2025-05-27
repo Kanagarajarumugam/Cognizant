@@ -1,0 +1,138 @@
+wait i will give code in all html css and js
+please convert that
+
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Local Community Event Portal</title>
+  <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Inline Style for Body Background (optional example) -->
+  <style>
+    body {
+      background: #f0f8ff url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="help.html" target="_blank">Help</a></li>
+    </ul>
+  </nav>
+  <script src="bootstrap-5.3.6-dist/js/bootstrap.min.js"></script>
+  <!-- Welcome Banner -->
+  <header id="home">
+    <div id="welcomeBanner">
+      <h1 style="color: red;">Welcome to Our Local Event Portal!</h1>
+      <span style="color: red; font-weight: bold;">Special Offer Today!</span>
+      <p class="highlight">Join events and meet your neighbors!</p>
+    </div>
+  </header>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Community Highlights</h2>
+    <table>
+      <caption>Past Event Highlights</caption>
+      <tr>
+        <td><img src="img1.jpg" alt="Event 1" class="event-img"></td>
+        <td><img src="img2.jpg" alt="Event 2" class="event-img"></td>
+        <td><img src="img3.jpg" alt="Event 3" class="event-img"></td>
+      </tr>
+      <tr>
+        <td><img src="img4.jpg" alt="Event 4" class="event-img"></td>
+        <td><img src="img5.jpg" alt="Event 5" class="event-img"></td>
+        <td><img src="img6.jpg" alt="Event 6" class="event-img"></td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Event Registration -->
+  <section id="events">
+    <h2>Register for an Event</h2>
+    <form id="registrationForm" onsubmit="return showConfirmation()">
+      <input type="text" name="name" placeholder="Your Name" required autofocus><br>
+      <input type="email" name="email" placeholder="Email Address" required><br>
+      <input type="date" name="date" required><br>
+      <select id="eventType" name="eventType" onchange="savePreference()">
+        <option value="music">Music</option>
+        <option value="food">Food</option>
+        <option value="workshop">Workshop</option>
+      </select><br>
+      <textarea name="message" placeholder="Message"></textarea><br>
+      <output id="confirmation"></output><br>
+      <button type="submit">Submit</button>
+    </form>
+    <button onclick="clearPreferences()">Clear Preferences</button>
+  </section>
+
+  <!-- Feedback Form -->
+  <section id="feedback">
+    <h2>Feedback</h2>
+    <form>
+      <input type="tel" id="phone" placeholder="Phone Number" onblur="validatePhone()"><br>
+      <select id="feeDropdown" onchange="displayFee()">
+        <option value="free">Free</option>
+        <option value="10">$10</option>
+        <option value="20">$20</option>
+      </select>
+      <p id="feeResult"></p>
+      <textarea id="feedbackText" placeholder="Enter feedback..." onkeyup="countCharacters()"></textarea>
+      <p id="charCount">Characters: 0</p>
+      <br><button type="button" onclick="submitFeedback()">Submit Feedback</button>
+      <br>
+    </form>
+    <img src="event.jpg" alt="Event" id="eventImage" ondblclick="enlargeImage()">
+  </section>
+
+<!-- Community Bulletin -->
+<section id="news">
+  <div style="border: 2px solid #4A90E2; border-radius: 10px; background-color: #eef6ff; padding: 15px;">
+    <h2 class="highlight">Community Music Bulletin</h2>
+    <article>
+      <p>Our vibrant community is buzzing with musical talent! Join us for live concerts, local band performances, and open mic nights.</p>
+      <p>Whether you're a musician or a music lover, this is your hub for all music-related happenings. Don’t miss out on the rhythm of our city!</p>
+    </article>
+  </div>
+</section>
+
+
+  <!-- Video -->
+  <section id="videoInvite">
+    <h2>Event Promo Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4-Eg5J63X2c" title="YouTube video player" allowfullscreen></iframe>
+  </section>
+
+  <!-- Geolocation -->
+  <section id="location">
+    <h2>Find Nearby Events</h2>
+    <button onclick="findLocation()">Find Nearby Events</button>
+    <p id="locationDisplay"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>Contact us at info@localevent.com</p>
+  </footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+
